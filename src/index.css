@@ -1,0 +1,28 @@
+.icon::before {
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.dumbbell::before{
+  font: var(--fa-font-solid);
+  content: "\f44b";
+  padding: 8px;
+ 
+} 
+
+.btn::before{ 
+  font: var(--fa-font-solid);
+  content: "\f201";
+  padding: 100px;
+} 
+
+.modalContainer {
+  justify-content: center;
+  width: 400px;
+  height: 500px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  padding: 25px;
+}
