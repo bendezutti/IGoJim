@@ -4,21 +4,20 @@
   -webkit-font-smoothing: antialiased;
 }
 
-.dumbbell::before{
+.dumbbell::before {
   font: var(--fa-font-solid);
   content: "\f44b";
   padding: 8px;
- 
-} 
+}
 
-.btn::before{ 
+.btn::before {
   font: var(--fa-font-solid);
   content: "\f201";
   padding: 100px;
 } 
 
 .modalContainer {
-  margin:0 18px;
+  margin: 0 18px;
   position: fixed;
   justify-content: center;
   width: 350px;
@@ -29,9 +28,12 @@
   padding: 10px;
 }
 
-.x::before{ 
-  
+.x::before {
   font: var(--fa-font-solid);
   content: "\f00d";
-  
+} 
+
+.submitWeight::before {
+  font: var(--fa-font-solid);
+  content: "\f090";
 }
