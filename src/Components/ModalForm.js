@@ -8,15 +8,15 @@ alert(e.target.weight.value)
 function ModalForm({closeModal}) {
   return (
     <div className = "modalBackGround"> 
-       <button onClick = {()=> closeModal(false)}></button>
         <div className = "modalContainer" >
-        <Form onSubmit = {handlerSubmission}> 
+        <Form onSubmit = {handlerSubmission}>  
+        <button className = "x" onClick = {()=> closeModal(false)}></button>
             <Form.Label>Enter Weight: </Form.Label>
             <Form.Control
               type = "text"  
               name = "weight"
              />
-             <button variant = "primary" type = "submit">Submit </button>
+             <button className= "Submit" type = "submit">Submit </button>
          </Form> 
         </div>
     </div>
