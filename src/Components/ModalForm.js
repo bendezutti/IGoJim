@@ -1,8 +1,9 @@
 import { Form } from "react-bootstrap";
 
 function weightSubmission(e) { 
-(e.target.weight.value)
+alert(e.target.weight.value)
 } 
+
 
 function ModalForm({closeModal}) {
   return (

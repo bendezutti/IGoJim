@@ -18,11 +18,20 @@
 } 
 
 .modalContainer {
+  margin:0 18px;
+  position: fixed;
   justify-content: center;
-  width: 400px;
-  height: 500px;
+  width: 350px;
+  height: 190px;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   display: flex;
-  padding: 25px;
+  padding: 10px;
+}
+
+.x::before{ 
+  
+  font: var(--fa-font-solid);
+  content: "\f00d";
+  
 }
