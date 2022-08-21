@@ -1,27 +1,27 @@
 import React from "react";
 import NavBar from "./Components/NavBar.js";
 import LineChart from "./Components/LineChart";
-import {UserData} from "./Data"
-import {useState} from 'react'
+import { UserData } from "./Data"
+import { useState } from 'react'
 
 
 function App() {
-  const [userData, setUserState] = useState({
+  const [userData] = useState({
     labels: UserData.map((data) => data.week),
-      datasets: [{
-        label: "Max Increase Per Week",
-        data: UserData.map((data) => data.userMax),
-        borderColor: ["black"],
-        
-    }] 
+    datasets: [{
+      label: "Bench Max Per Week",
+      data: UserData.map((data) => data.userMax),
+      borderColor: ["black"],
+
+    }]
   })
-  
+
   return (
     <div className="App">
       <header>
-        <NavBar/>
+        <NavBar />
       </header>
-      <div style ={{width:2300}}>
+      <div style={{ width: 2300 }}>
         <LineChart chartData={userData} />
       </div>
       <div>
